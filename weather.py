@@ -10,7 +10,7 @@ result = response.json()
 temp = result["main"]["temp"]                                   # 현재기온
 humidity = result["main"]["humidity"]                           # 습도
 weather = result["weather"][0]["main"]                          # 날씨 상태
-current_time = datetime.now().strftime("%y-%m-&d %H:%M:%S")     # 현재 시각
+current_time = datetime.now().strftime("%y-%m-%d %H:%M:%S")     # 현재 시각
 
 # csv
 header = ["current_time","weather","temp","humidity"]
